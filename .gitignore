@@ -1,0 +1,24 @@
+# Dépendances
+/node_modules
+/vendor
+/services/*/vendor
+/services/*/node_modules
+
+# Environnement & Sécurité
+.env
+.env.backup
+*.key
+
+# Docker & Système
+docker-compose.override.yml
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea
+.vscode
+
+# Build
+/frontend/dist
+/services/event-service/var
+/services/auth-service/storage/*.key

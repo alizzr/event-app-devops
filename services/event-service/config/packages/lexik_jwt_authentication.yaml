@@ -1,0 +1,13 @@
+lexik_jwt_authentication:
+    # On garde uniquement la clé secrète
+    secret_key: '%env(resolve:JWT_SECRET_KEY)%'
+    
+    # SUPPRIMEZ LA LIGNE pass_phrase ICI !
+    
+    token_ttl: 3600
+
+    encoder:
+        signature_algorithm: HS256
+
+    # L'identifiant utilisateur est dans le champ 'email' (ou 'sub' selon votre token)
+    user_id_claim: email
